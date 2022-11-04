@@ -1,9 +1,7 @@
+import classes from "./logo.module.css";
+
 const Logo = () => {
-  return (
-    <div className="logo">
-      <img src="/logo.png" alt="logo" />
-    </div>
-  );
+  return <div className={classes.logo}>rawwrs' blog</div>;
 };
 
 export default Logo;
