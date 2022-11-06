@@ -14,13 +14,16 @@ interface PostData {
   content: string;
 }
 
-const getPostsData = (fileName: string) => {
-  const filePath = path.join(postsDirectory, fileName);
+export const getPostsFiles = () => {
+  return fs.readdirSync(postsDirectory);
+};
+
+export const getPostData = (postIdentifier: string) => {
+  //removes the file extension(from .md to '')
+  const postSlug = postIdentifier.replace(/\.md$/, "");
+  const filePath = path.join(postsDirectory, `${postSlug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(fileContent);
-
-  //removes the file extension(from .md to '')
-  const postSlug = fileName.replace(/\.md$/, "");
 
   const postData: PostData = {
     slug: postSlug,
@@ -38,10 +41,10 @@ const getPostsData = (fileName: string) => {
 };
 
 export const getAllPosts = () => {
-  const postFiles = fs.readdirSync(postsDirectory);
+  const postFiles = getPostsFiles();
 
   const allPosts = postFiles.map((postfile) => {
-    return getPostsData(postfile);
+    return getPostData(postfile);
   });
 
   const sortedPosts = allPosts.sort((postA, postB) =>
