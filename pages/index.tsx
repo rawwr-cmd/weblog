@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Hero from "../components/homepage/hero";
 import FeaturedPosts from "../components/homepage/featured-posts";
-import { getFeaturedPosts } from "../lib/posts-util";
+import { getFeaturedPosts } from "../lib-util/posts-util";
 
 interface HomepageProps {
   posts: {

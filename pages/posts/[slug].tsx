@@ -1,6 +1,5 @@
 import PostContent from "../../components/posts/post-detail/post-content";
-import { getPostData, getPostsFiles } from "../../lib/posts-util";
-import { GetStaticProps } from "next";
+import { getPostData, getPostsFiles } from "../../lib-util/posts-util";
 interface PostDetailPageProps {
   post: {
     slug: string;

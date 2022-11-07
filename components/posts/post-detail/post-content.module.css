@@ -19,6 +19,7 @@
     max-width: 600px;
 }
 
+
 @media (min-width: 768px) {
     .content {
         padding: var(--size-8);

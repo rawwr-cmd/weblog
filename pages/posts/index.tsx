@@ -1,5 +1,5 @@
 import AllPosts from "../../components/homepage/all-posts";
-import { getAllPosts } from "../../lib/posts-util";
+import { getAllPosts } from "../../lib-util/posts-util";
 
 interface AllPostsPageProps {
   posts: {
