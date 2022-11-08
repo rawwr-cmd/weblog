@@ -1,7 +1,10 @@
+import Head from "next/head";
+import { Fragment } from "react";
 import PostContent from "../../components/posts/post-detail/post-content";
 import { getPostData, getPostsFiles } from "../../lib-util/posts-util";
 interface PostDetailPageProps {
   post: {
+    excerpt: string;
     slug: string;
     title: string;
     image: string;
@@ -11,7 +14,15 @@ interface PostDetailPageProps {
 }
 
 const PostDetailPage: React.FC<PostDetailPageProps> = ({ post }) => {
-  return <PostContent post={post} />;
+  return (
+    <Fragment>
+      <Head>
+        <title>{post.title}</title>
+        <meta name="description" content={post.excerpt} />
+      </Head>
+      <PostContent post={post} />
+    </Fragment>
+  );
 };
 
 export const getStaticProps = async (context: { params: any }) => {
