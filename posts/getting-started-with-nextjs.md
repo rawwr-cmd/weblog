@@ -1,7 +1,7 @@
 ---
 title: 'getting started with Nextjs'
 date: '2022-10-16'
-image: 'nextjs.png'
+image: nextjs.png
 excerpt:
       "NextJs is a the React Framework for Production. NextJs adds some amazing features to React, some of which we will explore in this post."
 isFeatured: true
@@ -29,6 +29,6 @@ In this article, we'll dive into the core concepts and features NextJS has to of
 
 ## File-based Routing
 
-![Create routes via your file + folder structure](/images/posts/getting-started-with-nextjs/aj.png)
+![Create routes via your file + folder structure](/images/posts/getting-started-with-nextjs/unsplash.jpg)
 
 ... More content ...

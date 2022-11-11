@@ -11,8 +11,6 @@ import css from "react-syntax-highlighter/dist/cjs/languages/prism/css";
 SyntaxHighlighter.registerLanguage("js", js);
 SyntaxHighlighter.registerLanguage("css", css);
 
-// SyntaxHighlighter.registerLanguage("js", js);
-// SyntaxHighlighter.registerLanguage("css", css);
 interface PostContentProps {
   post: {
     slug: string;
