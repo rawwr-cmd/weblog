@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
-const { PHASE_DEVLOPMENT_SERVER } = require("next/constants");
 
-const nextConfig = (phase) => {
-  if (phase === PHASE_DEVLOPMENT_SERVER) {
+const { PHASE_DEVELOPMENT_SERVER } = require("next/constants");
+
+module.exports = (phase) => {
+  if (phase === PHASE_DEVELOPMENT_SERVER) {
     return {
-      reactStrictMode: true,
-      swcMinify: true,
       env: {
         mongodb_username: "rawwr",
         mongodb_password: "kCIexrkEqPj0UFbf",
@@ -14,9 +13,8 @@ const nextConfig = (phase) => {
       },
     };
   }
+
   return {
-    reactStrictMode: true,
-    swcMinify: true,
     env: {
       mongodb_username: "rawwr",
       mongodb_password: "kCIexrkEqPj0UFbf",
@@ -25,5 +23,3 @@ const nextConfig = (phase) => {
     },
   };
 };
-
-module.exports = nextConfig;
