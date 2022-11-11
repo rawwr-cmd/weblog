@@ -31,7 +31,7 @@ const Handler = async (req: NextApiRequest, res: NextApiResponse) => {
       message,
     };
 
-    console.log(newMessage);
+    // console.log(newMessage);
 
     let client;
 
