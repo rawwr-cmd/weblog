@@ -20,7 +20,7 @@ function printBasics() {
 printBasics();
 ```
 
-Learn more about it [here](https://academind.com).
+Learn more about it [here](https://developer.mozilla.org/en-US/).
 
 ```js
 const basics = 'Okay, that should not be easy difficult actually';
@@ -35,7 +35,7 @@ printBasics();
 
 
 ```js
-const basics = 'Okay, that should fuck easy difficult actually';
+const basics = 'Okay, that should be difficult actually';
 
 function printBasics() {
   console.log(basics):

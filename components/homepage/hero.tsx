@@ -12,10 +12,11 @@ const Hero = () => {
           height={300}
         />
       </div>
-      <h1>hi, i'm rawwr</h1>
+      <h1>hi, i'm Akshay</h1>
       <p>
-        I love blogging about webdevelopment - both front-end and back-end. I
-        also like blogging about my personal life and my interests.
+        This is the place where I unleash my web development knowledge and spill
+        the beans about my life. Strap in, folks, 'cause it's gonna be a wild
+        ride!
       </p>
     </section>
   );
